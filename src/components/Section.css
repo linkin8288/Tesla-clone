@@ -1,4 +1,22 @@
-.wrapimg {
+.wrapimg-1 {
     background-image: url("/public/images/model-y.jpg");
-
+}
+.wrapimg-2 {
+    background-image: url("/public/images/model-s.jpg");
+}
+.wrapimg-3 {
+    background-image: url("/public/images/model-3.jpg");
+}
+.wrapimg-4 {
+    background-image: url("/public/images/model-x.jpg");
+}
+.wrapimg-5 {
+    background-image: url("/public/images/solar-panel.jpg");
+}
+.wrapimg-6 {
+    background-image: url("/public/images/accessories.jpg");
+}
+h1 {
+    font-size: 2.4rem;
+    letter-spacing: 3px;
 }

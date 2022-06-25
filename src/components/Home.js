@@ -2,18 +2,21 @@ import React from 'react'
 import styled from "styled-components"
 import Section from './Section'
 import Header from './Header'
+import Footer from './Footer'
 // Section repeat several times, so imports it
 
 function Home() {
   return (
     <Container>
         <Header />
-        <Section
+        <Section />
+        <Footer />
+        {/* <Section
             title="Model Y"
             description= "Order Online for Touchless Delivery"
             backgroundImg="model-y.jpg"
             leftBtnText="Custom order"
-            rightBtnText="Existing inventory" 
+            rightBtnText="Existing inventory"
         />
          <Section 
             title="Model S"
@@ -48,7 +51,7 @@ function Home() {
             description= ""
             backgroundImg="accessories.jpg"
             leftBtnText="Shop now"
-            />
+            /> */}
     </Container>
   )
 }

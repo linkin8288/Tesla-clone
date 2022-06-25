@@ -17,30 +17,32 @@ function Header() {
   return (
     <Container>
         <a>
-            <img src="/images/logo.svg" alt=""/>
+            <img src='/images/logo.svg' alt=''/>
         </a>
         <Menu>
-          {cars && cars.map((car, index)=>(
-            <a href="#" key={index}>{car}</a>
-          ))}
+          <p><a href="#">Model Y</a></p>
+          <p><a href="#">Model S</a></p>
+          <p><a href="#">Model 3</a></p>
+          <p><a href="#">Model X</a></p>
+          <p><a href="#">Charging</a></p>
         </Menu>
         <RightMenu>
           <a href="#">Shop</a>
-          <a href="#">Tesla Account</a>
+          <a href="#">Account</a>
           <CustomMenu onClick={()=>setBurgerOpen(true) }/>
         </RightMenu>
         <BurgerNav show={burgenOpen}>
           <CloseWrapper>
             <CustomClose onClick={()=>setBurgerOpen(false)}/>
           </CloseWrapper>
-          <li><a href="#">Existing Inventory</a></li>
-          <li><a href="#">Used Inventory</a></li>
-          <li><a href="#">Trade-in</a></li>
-          <li><a href="#">Cybertruck</a></li>
-          <li><a href="#">Roadster</a></li>
-          <li><a href="#">Semi</a></li>
-          <li><a href="#">Charging</a></li>
-          <li><a href="#">Existing Inventory</a></li>
+            <li><a href="#">Existing Inventory</a></li>
+            <li><a href="#">Used Inventory</a></li>
+            <li><a href="#">Trade-in</a></li>
+            <li><a href="#">Cybertruck</a></li>
+            <li><a href="#">Roadster</a></li>
+            <li><a href="#">Semi</a></li>
+            <li><a href="#">Charging</a></li>
+            <li><a href="#">Existing Inventory</a></li>
         </BurgerNav>
     </Container>
   )
@@ -48,6 +50,7 @@ function Header() {
 
 const Container = styled.div`
     min-height: 60px;
+    flex-flow: row wrap;
     position: fixed;
     display: flex;
     align-items: center;
@@ -64,10 +67,9 @@ const Menu = styled.div`
     align-items: center;
     flex: 1;
     justify-content: center;
-
+    
     a {
       font-weight: 600;
-      text-transform: uppercase;
       padding: 0 10px;
       flex-wrap: nowrap;
     }
@@ -82,7 +84,6 @@ const RightMenu = styled.div`
       align-items: center;
     a {
         font-weight: 600;
-        text-transform: uppercase;
         padding: 0 10px;
         flex-wrap: nowrap;
       }
