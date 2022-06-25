@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Tesla-clone/static/css/main.1516900a.css",
-    "main.js": "/Tesla-clone/static/js/main.5c6ad673.js",
+    "main.css": "/Tesla-clone/static/css/main.4575cfac.css",
+    "main.js": "/Tesla-clone/static/js/main.9b7aad3f.js",
     "static/js/787.3b70ba07.chunk.js": "/Tesla-clone/static/js/787.3b70ba07.chunk.js",
+    "static/media/model-y.jpg": "/Tesla-clone/static/media/model-y.30acb76aab6f760a753a.jpg",
     "index.html": "/Tesla-clone/index.html",
-    "main.1516900a.css.map": "/Tesla-clone/static/css/main.1516900a.css.map",
-    "main.5c6ad673.js.map": "/Tesla-clone/static/js/main.5c6ad673.js.map",
+    "main.4575cfac.css.map": "/Tesla-clone/static/css/main.4575cfac.css.map",
+    "main.9b7aad3f.js.map": "/Tesla-clone/static/js/main.9b7aad3f.js.map",
     "787.3b70ba07.chunk.js.map": "/Tesla-clone/static/js/787.3b70ba07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1516900a.css",
-    "static/js/main.5c6ad673.js"
+    "static/css/main.4575cfac.css",
+    "static/js/main.9b7aad3f.js"
   ]
 }
