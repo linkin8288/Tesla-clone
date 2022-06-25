@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 // Fade Animation using react-reveal
 import Fade from 'react-reveal/Fade'
+import './Section.css'
 
 // Background Image
 // Title
@@ -10,7 +11,7 @@ import Fade from 'react-reveal/Fade'
 function Section({title, description, backgroundImg, leftBtnText, rightBtnText}) {
   return (
     // Passing props to style components
-    <Wrap bgImage={backgroundImg}>
+    <Wrap bgImage={backgroundImg} className="wrapimg">
         <Fade bottom>
             <ItemText>
                 <h1>{title}</h1>
@@ -30,7 +31,7 @@ function Section({title, description, backgroundImg, leftBtnText, rightBtnText})
                 }
             </ButtonGroup>
         </Fade>
-            <DownArrow src="/images/down-arrow.svg"/>
+            <DownArrow className='arrow'/>
         </Buttons>
     </Wrap>
   )
@@ -39,8 +40,7 @@ function Section({title, description, backgroundImg, leftBtnText, rightBtnText})
 const Wrap = styled.div`
     width: 100vw;
     height: 100vh;
-    background: orange;
-    background-image: url('/images/model-s.jpg');
+    /* background-image: url('/images/model-x.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,12 +48,13 @@ const Wrap = styled.div`
     flex-direction: column;
     justify-content: space-between; // vertical
     align-items: center; // horizontal
-    background-image: ${props => `url("/images/${props.bgImage}")`}
+    /* background-image: ${props => `url("/images/${props.bgImage}")`} */
 
 `
 const ItemText = styled.div`
     padding-top: 15vh;
     text-align: center;
+    
 `
 
 const Buttons = styled.div`
